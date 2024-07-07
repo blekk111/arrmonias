@@ -18,47 +18,43 @@ body{
   width: 100%;
   z-index: 1000;
   background-color: #eef1f0b2;
-  backdrop-filter: blur(3px); /* Efecto de blur */
+  backdrop-filter: blur(3px);
   padding: 0px;
   border-bottom: 1px solid #dddddd00;
   font-family: "Montserrat", sans-serif;
 }
 
-/* Media query para pantallas menores de 768px */
 @media (max-width: 768px) {
   .header {
-    padding: 10px 0; /* Añade un poco de padding en pantallas pequeñas */
-    font-size: 0.9rem; /* Reduce el tamaño de la fuente si es necesario */
+    padding: 10px 0;
+    font-size: 0.9rem;
   }
 }
 
 .container {
-    margin-right: 3%; /* margen relativo, eliminamos el margen fijo */
+    margin-right: 3%;
     font-family: 'Open Sans', sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-/* Media query para pantallas menores de 768px */
 @media (max-width: 768px) {
     .container {
-        flex-direction: column; /* Cambia la dirección del flex a columna */
-        margin-right: 0; /* Elimina el margen derecho en pantallas pequeñas */
-        margin-bottom: 20px; /* Añade un margen inferior para separar los elementos */
+        flex-direction: column;
+        margin-right: 0;
+        margin-bottom: 20px;
     }
 }
 
 .btn {
-  
-  
   background-color: #21a73a;
   border: none;
-  padding: 0.75em 1.875em; /* Cambiado a unidades relativas */
+  padding: 0.75em 1.875em;
   border-radius: 25px;
   cursor: pointer;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  font-size: 1rem; /* Cambiado a unidades relativas */
+  font-size: 1rem;
   font-weight: bold;
   color: #ffffff;
   transition: background-color 0.3s ease;
@@ -66,11 +62,10 @@ body{
   font-family: "Montserrat", sans-serif;
 }
 
-/* Media query para pantallas menores de 768px */
 @media (max-width: 768px) {
   .btn {
-    padding: 0.5em 1.5em; /* Ajuste de padding para pantallas pequeñas */
-    font-size: 0.9rem; /* Ajuste de tamaño de fuente para pantallas pequeñas */
+    padding: 0.5em 1.5em;
+    font-size: 0.9rem;
   }
 }
 
@@ -88,54 +83,25 @@ body{
 #imagenTitulo {
     font-family: 'Open Sans', sans-serif;
     background-image: url('img/image.png');
-    background-size: cover; /* Ajustado para una mejor responsividad */
+    background-size: cover;
     background-position: center;
-    width: 10vw; /* Ajustado a un porcentaje del ancho de la ventana */
-    height: 5vw; /* Ajustado proporcionalmente al ancho para mantener la relación de aspecto */
+    width: 10vw;
+    height: 5vw;
     border-radius: 4px;
 }
 
-/* Media query para pantallas pequeñas */
 @media (max-width: 768px) {
     #imagenTitulo {
-        width: 40vw; /* Aumenta el tamaño en pantallas pequeñas */
-        height: 20vw; /* Ajusta la altura proporcionalmente */
+        width: 40vw;
+        height: 20vw;
     }
 }
 @media (max-width: 600px) {
   #imagenTitulo {
-    width: 100px;/* Estilos base */
-.slogan {
-  font-size: 1rem; /* Unidad relativa */
-  /* Resto de tus estilos */
-}
-
-.button {
-  padding: 10px 20px;
-  font-size: 1rem; /* Unidad relativa */
-  /* Resto de tus estilos */
-}
-
-/* Media query para pantallas menores de 768px */
-@media (max-width: 768px) {
-  .slogan {
-    font-size: 0.8rem; /* Tamaño de fuente más pequeño en pantallas pequeñas */
-    max-width: 100%; /* Ajusta el ancho máximo para pequeñas pantallas */
-  }
-
-  .button {
-    padding: 8px 15px; /* Padding más pequeño para botones en pantallas pequeñas */
-    font-size: 0.9rem; /* Tamaño de fuente más pequeño */
-  }
-
-  .title-line {
-    font-size: 0.9rem; /* Ajusta el tamaño de fuente para líneas de título */
-  }
-}
+    width: 100px;
     height: 50px;
   }
 }
-
 
 
 /* header */
@@ -444,17 +410,17 @@ main {
 
 .selection-bar {
   position: absolute;
-  bottom: 0; /* Agregado */
+  bottom: 0; 
   height: 10px;
   width: 0;
   background-color: #007bff;
   transition: all 0.3s ease;
-  z-index: -1; /* Ajustado */
+  z-index: -1;
   border-radius: 0 0 5px 5px;
 }
 
 .content {
-  width: calc(100vw - 60px); /* Set width to 100% of viewport width minus 60px */
+  width: calc(100vw - 60px); 
   border: 1px solid #ddd;
   padding: 20px;
   margin: 0px;
@@ -504,7 +470,7 @@ footer {
 
 .section {
   background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 20px; /* Agrega un borde redondeado de 20px */
+  border-radius: 20px; 
   padding: 20px;
   width: 45%;
   text-align: left;
@@ -554,7 +520,7 @@ button:hover {
   border: 5px solid transparent;
   border-image: linear-gradient(to right, #FF7F50, #FFD700);
   border-image-slice: 1;
-  border-radius: 20px; /* Add border radius */
+  border-radius: 20px;
   background-image: url('img/fondoCard.jpeg');
   background-size: cover;
   background-position: center;
@@ -564,19 +530,18 @@ button:hover {
   border: 5px solid transparent;
   border-image: linear-gradient(to right, #32CD32, #00CED1);
   border-image-slice: 1;
-  border-radius: 20px; /* Add border radius */
+  border-radius: 20px;
   background-image: url('img/fondoCard.jpeg');
   background-size: cover;
   background-position: center;
 }
 
 .section::before {
-  
   content: "";
   background-size: cover;
   background-position: center;
   opacity: 0.8;
-  background-image: linear-gradient(to bottom, rgba(62, 84, 42, 0.5), rgba(0, 0, 0, 0.675)); /* Add the desired gradient */
+  background-image: linear-gradient(to bottom, rgba(62, 84, 42, 0.5), rgba(0, 0, 0, 0.675));
   position: absolute;
   top: 0;
   left: 0;
@@ -585,19 +550,20 @@ button:hover {
   z-index: -1;
 }
 .card1,.card2 {
-  border: 5px solid #4567b7; /* Establece un borde azul */
-  border-radius: 20px; /* Redondea los bordes */
-  transform: translateY(-20px); /* Añade una forma rectangular hacia arriba */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Añade una sombra para dar profundidad */
+  border: 5px solid #4567b7;
+  border-radius: 20px;
+  transform: translateY(-20px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .card1 {
-  background-color: #f7f7f700; /* Color de fondo blanco */
+  background-color: #f7f7f700;
 }
 
 .card2 {
-  background-color: #e7e7e700; /* Color de fondo gris claro */
+  background-color: #e7e7e700;
 }
+
 
 
 
