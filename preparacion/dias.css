@@ -3,6 +3,187 @@ body {
     margin: 0;
     padding: 0;
 }
+/* ---------------------------- */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #eef1f0b2;
+    backdrop-filter: blur(3px); /* Efecto de blur */
+    padding: 0px;
+    border-bottom: 1px solid #dddddd00;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  /* Media query para pantallas menores de 768px */
+  @media (max-width: 768px) {
+    .header {
+      padding: 10px 0; /* Añade un poco de padding en pantallas pequeñas */
+      font-size: 0.9rem; /* Reduce el tamaño de la fuente si es necesario */
+    }
+  }
+  
+  .container {
+      margin-right: 3%; /* margen relativo, eliminamos el margen fijo */
+      font-family: 'Open Sans', sans-serif;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  
+  /* Media query para pantallas menores de 768px */
+  @media (max-width: 768px) {
+      .container {
+          flex-direction: column; /* Cambia la dirección del flex a columna */
+          margin-right: 0; /* Elimina el margen derecho en pantallas pequeñas */
+          margin-bottom: 20px; /* Añade un margen inferior para separar los elementos */
+      }
+  }
+  
+  .btn {
+    
+    
+    background-color: #21a73a;
+    border: none;
+    padding: 0.75em 1.875em; /* Cambiado a unidades relativas */
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 1rem; /* Cambiado a unidades relativas */
+    font-weight: bold;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+    margin: 10pxs;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  /* Media query para pantallas menores de 768px */
+  @media (max-width: 768px) {
+    .btn {
+      padding: 0.5em 1.5em; /* Ajuste de padding para pantallas pequeñas */
+      font-size: 0.9rem; /* Ajuste de tamaño de fuente para pantallas pequeñas */
+    }
+  }
+  
+  .btn:hover {
+    background-color: #4caf4f;
+    color: #ffffff;
+    box-shadow: 0 4px 8px rgba(106, 231, 94, 0.849);
+  }
+  
+  .btn:active {
+    background: linear-gradient(to right, #7ad27d, #000000);
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.1);
+    filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.353));
+  }
+  #imagenTitulo {
+      font-family: 'Open Sans', sans-serif;
+    background-image: url('img/image.png');
+      background-size: cover; /* Ajustado para una mejor responsividad */
+      background-position: center;
+      width: 10vw; /* Ajustado a un porcentaje del ancho de la ventana */
+      height: 5vw; /* Ajustado proporcionalmente al ancho para mantener la relación de aspecto */
+      border-radius: 4px;
+  }
+  
+  /* Media query para pantallas pequeñas */
+  @media (max-width: 768px) {
+      #imagenTitulo {
+          width: 40vw; /* Aumenta el tamaño en pantallas pequeñas */
+          height: 20vw; /* Ajusta la altura proporcionalmente */
+      }
+  }
+  @media (max-width: 600px) {
+    #imagenTitulo {
+      width: 100px;/* Estilos base */
+  .slogan {
+    font-size: 1rem; /* Unidad relativa */
+    /* Resto de tus estilos */
+  }
+  
+  .button {
+    padding: 10px 20px;
+    font-size: 1rem; /* Unidad relativa */
+    /* Resto de tus estilos */
+  }
+  
+  /* Media query para pantallas menores de 768px */
+  @media (max-width: 768px) {
+    .slogan {
+      font-size: 0.8rem; /* Tamaño de fuente más pequeño en pantallas pequeñas */
+      max-width: 100%; /* Ajusta el ancho máximo para pequeñas pantallas */
+    }
+  
+    .button {
+      padding: 8px 15px; /* Padding más pequeño para botones en pantallas pequeñas */
+      font-size: 0.9rem; /* Tamaño de fuente más pequeño */
+    }
+  
+    .title-line {
+      font-size: 0.9rem; /* Ajusta el tamaño de fuente para líneas de título */
+    }
+  }
+      height: 50px;
+    }
+  }
+  
+  
+  
+  /* header */
+  /* footer */
+footer {
+    background-color: #081C15;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    font-family: "Staatliches", sans-serif;
+    font-weight: 400;
+    width: 100%;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+  }
+  
+  .footer-content h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .footer-content button {
+    background-color: #6eff88;
+    color: #2e3b39;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+  }
+  
+  .footer-content button:hover {
+    background-color: #5fe176;
+  }
+  
+  .footer-border {
+    height: 4px;
+    background: linear-gradient(to right, #32CD32, #FFD700, #FF7F50, #32CD32, #00CED1);
+    margin-top: 10px;
+    width: 100%;
+  }
+  
+  /* footer */
+
+/* ---------------------------- */
 
 .section {
     display: flex;

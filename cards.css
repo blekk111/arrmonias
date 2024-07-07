@@ -53,17 +53,18 @@ body{
 }
 
 .btn {
-  font-family: 'Open Sans', sans-serif;
-  background-color: #3b833d;
+  background-color: #21a73a;
   border: none;
   padding: 0.75em 1.875em; /* Cambiado a unidades relativas */
-  border-radius: 0.25em; /* Cambiado a unidades relativas */
+  border-radius: 25px;
   cursor: pointer;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   font-size: 1rem; /* Cambiado a unidades relativas */
   font-weight: bold;
   color: #ffffff;
   transition: background-color 0.3s ease;
+  margin: 10pxs;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* Media query para pantallas menores de 768px */
@@ -343,7 +344,7 @@ body{
 
 /* footer */
 footer {
-    background-color: #081C15;
+    background-color: #040e0a;
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -395,10 +396,11 @@ footer {
   .hiking-section {
     display: flex;
     align-items: center;
-    background-color: #111;
+    background-color: #0e0e0e;
     color: #fff;
     padding: 20px;
     border-radius: 10px;
+    margin: 20px 20px 50px 20px;
 }
 
 .image-container {
@@ -433,11 +435,9 @@ footer {
 .btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #ff7f50;
-    color: #fff;
     text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    color: #fff;
+   
 }
 
 .btn:hover {
