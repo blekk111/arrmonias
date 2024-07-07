@@ -1,0 +1,448 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Roboto:wght@400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,500;1,500&family=Staatliches&display=swap');
+
+body{
+  background-color: #081C15;
+  font-family: "Staatliches", sans-serif;
+  font-weight: 400;
+}
+
+
+/* header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #081c15b2;
+  backdrop-filter: blur(3px); /* Efecto de blur */
+  padding: 0px;
+  border-bottom: 1px solid #dddddd00;
+  font-family: 'Roboto', sans-serif; /* Selecciona una sola familia de fuentes */
+}
+
+/* Media query para pantallas menores de 768px */
+@media (max-width: 768px) {
+  .header {
+    padding: 10px 0; /* Añade un poco de padding en pantallas pequeñas */
+    font-size: 0.9rem; /* Reduce el tamaño de la fuente si es necesario */
+  }
+}
+
+.container {
+    margin-right: 3%; /* margen relativo, eliminamos el margen fijo */
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Media query para pantallas menores de 768px */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Cambia la dirección del flex a columna */
+        margin-right: 0; /* Elimina el margen derecho en pantallas pequeñas */
+        margin-bottom: 20px; /* Añade un margen inferior para separar los elementos */
+    }
+}
+
+.btn {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #3b833d;
+  border: none;
+  padding: 0.75em 1.875em; /* Cambiado a unidades relativas */
+  border-radius: 0.25em; /* Cambiado a unidades relativas */
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 1rem; /* Cambiado a unidades relativas */
+  font-weight: bold;
+  color: #ffffff;
+  transition: background-color 0.3s ease;
+}
+
+/* Media query para pantallas menores de 768px */
+@media (max-width: 768px) {
+  .btn {
+    padding: 0.5em 1.5em; /* Ajuste de padding para pantallas pequeñas */
+    font-size: 0.9rem; /* Ajuste de tamaño de fuente para pantallas pequeñas */
+  }
+}
+
+.btn:hover {
+  background-color: #4caf4f;
+  color: #ffffff;
+  box-shadow: 0 4px 8px rgba(81, 209, 70, 0.849);
+}
+
+.btn:active {
+  background-color: #39af3d;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.1);
+  filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.353));
+}
+
+#imagenTitulo {
+    font-family: 'Open Sans', sans-serif;
+    background-image: url('img/armonias_Blanco.png');
+    background-size: cover; /* Ajustado para una mejor responsividad */
+    background-position: center;
+    width: 10vw; /* Ajustado a un porcentaje del ancho de la ventana */
+    height: 5vw; /* Ajustado proporcionalmente al ancho para mantener la relación de aspecto */
+    border-radius: 4px;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    #imagenTitulo {
+        width: 40vw; /* Aumenta el tamaño en pantallas pequeñas */
+        height: 20vw; /* Ajusta la altura proporcionalmente */
+    }
+}
+@media (max-width: 600px) {
+  #imagenTitulo {
+    width: 100px;/* Estilos base */
+.slogan {
+  font-size: 1rem; /* Unidad relativa */
+  /* Resto de tus estilos */
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 1rem; /* Unidad relativa */
+  /* Resto de tus estilos */
+}
+
+/* Media query para pantallas menores de 768px */
+@media (max-width: 768px) {
+  .slogan {
+    font-size: 0.8rem; /* Tamaño de fuente más pequeño en pantallas pequeñas */
+    max-width: 100%; /* Ajusta el ancho máximo para pequeñas pantallas */
+  }
+
+  .button {
+    padding: 8px 15px; /* Padding más pequeño para botones en pantallas pequeñas */
+    font-size: 0.9rem; /* Tamaño de fuente más pequeño */
+  }
+
+  .title-line {
+    font-size: 0.9rem; /* Ajusta el tamaño de fuente para líneas de título */
+  }
+}
+    height: 50px;
+  }
+}
+
+
+
+/* header */
+
+
+/* actividades */
+body{
+    margin: 0%;
+}
+.dive-club-section {
+  background-image: url('img/fondoActividades.jpg'); /* Aquí pones la ruta correcta de tu imagen */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  /* Agregamos el gradiente overlay */
+  background-image: 
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.356) 50%, #081C15 100%),
+      url('img/fondoActividades.jpg'),
+      linear-gradient(to left, rgba(0, 0, 0, 0.59) 50%, #081C15 100%);
+  background-size: 100% 100%, cover;
+  background-position: center;
+}
+.text-content {
+    color: white;
+    margin-left: 80px; 
+    max-width: 500px; 
+}
+
+.text-content h1 {
+    font-size: 4em;
+    margin-bottom: 30px;
+}
+
+.text-content p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+/* actividades */
+
+
+/* Dias */
+.explore-section {
+   background-color: #081C15;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+.explore-text {
+    max-width: 500px;
+}
+
+.explore-text h1 {
+    font-size: 4em;
+    margin: 0;
+}
+
+.explore-text p {
+    margin: 10px 0;
+}
+
+.explore-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #ff9800;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+}
+
+.cards-container {
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+    width: 1000px; /* Ajusta el ancho según sea necesario */
+    transition: transform 0.5s ease-in-out; /* Ajusta la duración y la curva de velocidad según necesites */
+}
+
+.card {
+    background-size: cover;
+    background-position: center;
+    width: 182px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0px;
+    
+    color: white;
+    text-align: center;
+    flex-shrink: 0;
+    border-radius: 20px;
+}
+
+.card-content {
+    background: rgba(0, 0, 0, 0.39);
+    padding: 0%;
+    margin: 0px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 10px 0px 10px 0px;
+}
+
+.card h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.card p {
+    margin: 5px 0;
+}
+
+.card-button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #ff9800;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px ;
+}
+
+.carousel-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2em;
+    cursor: pointer;
+}
+.cards-container {
+  transition: transform 0.5s ease-in-out;
+}
+
+  .card-active {
+    transform: scale(1.1);
+  }
+
+
+
+  
+/* Dias */
+
+
+/* invitacion */
+.invitation-section {
+    background-image: url('img/invitacion.jpg'); /* Aquí pones la ruta correcta de tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    height: 50vh; /* Ajusta la altura según sea necesario */
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0px 70px 70px 70px;
+}
+
+.invitation-content {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.086); /* Fondo semitransparente para el texto */
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.invitation-content h1 {
+  font-family: "Staatliches", sans-serif;
+  font-weight: 400;
+  
+    font-size: 5em;
+    margin: 0;
+}
+
+.invitation-content p {
+    margin: 10px 0 20px;
+}
+
+.invitation-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #32CD32; /* Color verde */
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* invitacion */
+
+/* footer */
+footer {
+    background-color: #081C15;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    font-family: "Staatliches", sans-serif;
+  font-weight: 400;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+  }
+  
+  .footer-content h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .footer-content button {
+    background-color: #6eff88;
+    color: #2e3b39;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+  }
+  
+  .footer-content button:hover {
+    background-color: #5fe176;
+  }
+  
+  .footer-border {
+    height: 4px;
+    background: linear-gradient(to right, #32CD32, #FFD700, #FF7F50, #32CD32, #00CED1);
+    margin-top: 10px;
+    width: 100%;
+  }
+  
+  /* footer */
+
+
+  /* otra pagina */
+  .hiking-section {
+    display: flex;
+    align-items: center;
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.image-container {
+    flex: 1;
+}
+
+.image-container img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.text-container {
+    flex: 2;
+    margin-left: 20px;
+}
+
+.text-container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.text-container h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.text-container p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff7f50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ff4500;
+}
+
+
+  /* otra pagina */

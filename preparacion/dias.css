@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    color: white;
+}
+
+.section .text {
+    flex: 1;
+    padding: 20px;
+}
+
+.section .image {
+    flex: 1;
+    text-align: center;
+}
+
+.section .image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.yellow {
+    background-color: yellow;
+    color: black; /* Para que el texto sea visible en el fondo amarillo */
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
+
+.pink {
+    background-color: pink;
+}
+/* -------------------------- */
