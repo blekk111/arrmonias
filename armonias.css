@@ -8,6 +8,7 @@
 body{
   background-color: #f8f5f1;
   font-family: "Montserrat", sans-serif;
+  
 }
 
 /* header */
@@ -115,7 +116,6 @@ body{
   height: 80vh;
   width: 100vw;
   z-index: -1; 
-  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -137,7 +137,7 @@ main {
 /* section1 */
 
 
-/* invitacion */
+/* Estilos base */
 #invitacion {
   display: flex;
   justify-content: space-between;
@@ -147,52 +147,68 @@ main {
   background-color: #f8f5f1;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  background-color: #f8f5f1;
 }
 
 .title {
-  font-size: 4rem;
+  font-size: 4rem; 
   font-weight: 700;
   color: #1a1a1a;
   line-height: 1.1;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
+ 
 }
+
+
 
 .slogan {
-  font-size: 1rem;
-  font-weight: 400;
-  color: #1a1a1a;
-  max-width: 500px;
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
+  font-size: 1rem; 
   font-weight: 500;
-  font-style: normal;
-}
-
-.title-line {
-  display: block;
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 800;
-  font-style: normal;
+  color: #1a1a1a;
+  max-width: 500px; 
 }
 
 .button {
-  display: inline-block;
   padding: 10px 20px;
-  font-size: 1rem;
+  font-size: 1rem; 
   font-weight: 700;
   color: #fff;
   background-color: #32cd32;
-  border: none;
   border-radius: 5px;
-  cursor: pointer;
-  text-decoration: none;
-  margin-top: 20px;
-  font-family: "Montserrat", sans-serif;
 }
-/* invitacion */
+
+/* Media Queries */
+@media (max-width: 768px) {
+  #invitacion {
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 10%;
+  }
+
+  .title {
+    margin-top: 0.2rem;
+    font-size: 2.5rem; 
+  }
+
+  .slogan {
+    font-size: 0.9rem;
+    max-width: 100%; 
+    margin-top: 15px;
+  }
+
+  .button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 2rem; 
+  }
+
+  .slogan, .button {
+    font-size: 0.8rem;
+  }
+}
 
 /* section2 */
 #colaboracion {
@@ -228,6 +244,23 @@ main {
   filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.353));
 }
 
+/* Media Queries para dispositivos móviles */
+@media (max-width: 768px) {
+  .brands-container img {
+    max-width: 100px;
+    height: auto;
+    margin: 0px 5px 5px 5px;
+  }
+
+  .brands-container {
+    margin: 10px;
+  }
+
+  #colaboracion {
+    margin: 10px;
+    font-size: 0.9rem;
+  }
+}
 /* section2 */
 
 /* section3 */
@@ -284,49 +317,56 @@ main {
 
 .stat {
   text-align: center;
-  margin: 1em; /* Cambiado a unidades relativas */
+  margin: 1em;
   font-family: "Montserrat", sans-serif;
 }
 
 .stat img {
-  width: 50px; /* Considera cambiar a unidades relativas o usar max-width para responsividad */
-  height: auto; /* Asegura que la altura se ajuste proporcionalmente */
+  width: 50px;
+  height: auto;
   margin-bottom: 10px;
 }
 
 .number {
-  font-size: 1.5em; /* Unidades relativas para mejor escalabilidad */
+  font-size: 1.5em;
   font-weight: bold;
   color: #FFFFFF;
   font-family: "Montserrat", sans-serif;
 }
 
 .label {
-  font-size: 1em; /* Unidades relativas para mejor escalabilidad */
+  font-size: 1em;
   color: #FFFFFF;
   font-family: "Montserrat", sans-serif;
 }
-/* banner */
 
-/* Media Queries para ajustes en pantallas pequeñas */
 @media (max-width: 768px) {
+  #banner {
+    flex-direction: column;
+    padding: 20px 10px;
+  }
+
   .stat img {
-    width: 30px; /* Ajusta el tamaño de la imagen para pantallas pequeñas */
+    width: 30px;
   }
 
   .number, .label {
-    font-size: 1em; /* Reduce el tamaño del texto para pantallas pequeñas */
+    font-size: 1em;
+  }
+
+  .stat {
+    margin: 0.5em;
   }
 }
 
 /* Dias */
 .tab-container {
   display: flex;
-  justify-content: center; /* change from flex-start to center */
+  justify-content: center; 
   background-color: #f0f0f0;
   padding: 10px;
   border-bottom: 1px solid #ccc;
-  margin-left: 0; /* remove the margin-left */
+  margin-left: 0; 
 }
 .tab {
   cursor: pointer;
@@ -524,45 +564,68 @@ button:hover {
   background-image: url('img/fondoCard.jpeg');
   background-size: cover;
   background-position: center;
-}
+  }
 
-.card2 {
-  border: 5px solid transparent;
-  border-image: linear-gradient(to right, #32CD32, #00CED1);
-  border-image-slice: 1;
-  border-radius: 20px;
-  background-image: url('img/fondoCard.jpeg');
-  background-size: cover;
-  background-position: center;
-}
+  .card2 {
+    border: 5px solid transparent;
+    border-image: linear-gradient(to right, #32CD32, #00CED1);
+    border-image-slice: 1;
+    border-radius: 20px;
+    background-image: url('img/fondoCard.jpeg');
+    background-size: cover;
+    background-position: center;
+  }
 
-.section::before {
-  content: "";
-  background-size: cover;
-  background-position: center;
-  opacity: 0.8;
-  background-image: linear-gradient(to bottom, rgba(62, 84, 42, 0.5), rgba(0, 0, 0, 0.675));
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-}
-.card1,.card2 {
-  border: 5px solid #4567b7;
-  border-radius: 20px;
-  transform: translateY(-20px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
+  .section::before {
+    content: "";
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+    background-image: linear-gradient(to bottom, rgba(62, 84, 42, 0.5), rgba(0, 0, 0, 0.675));
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  .card1,.card2 {
+    border: 5px solid #4567b7;
+    border-radius: 20px;
+    transform: translateY(-20px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
 
-.card1 {
-  background-color: #f7f7f700;
-}
+  .card1 {
+    background-color: #f7f7f700;
+  }
 
-.card2 {
-  background-color: #e7e7e700;
-}
+  .card2 {
+    background-color: #e7e7e700;
+  }
+
+  @media (max-width: 768px) {
+    #cards {
+      flex-direction: column;
+      width: 90%;
+    }
+
+    .section {
+      width: 90%;
+      margin: 50px 5% 30px 5%;
+      padding: 15px;
+    }
+
+    .subtitle, .section h1, .description, button {
+      font-size: 90%;
+    }
+
+    .card1, .card2 {
+      margin: 20px auto;
+      transform: translateY(0);
+      width: auto;
+    }
+  }
 
 
 
@@ -615,6 +678,18 @@ footer {
   width: 100%;
 }
 
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .footer-content h1, .footer-content button {
+    margin-bottom: 20px; 
+  }
+}
 /* footer */
 /* -------------------------------------------------------------- */
 /* actividades */
