@@ -107,27 +107,39 @@ main {
 
 /* section1 */
 
-.image-container{
-  height: 90vh;
-  display: flex;
-  margin-top: 1rem;
- 
-}
+
+  .image-container {
+    height: 90vh;
+    display: flex;
+    margin-top: 1rem;
+    top: 0px;
+    font-family: "Montserrat", sans-serif;
+    background-image: url('img/render\ 2.png');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    width: 100vw;
+    z-index: -1;
+    display: flex;
+    
+  }
+
 #invitacion {
   position: absolute;
-  top: 35%; /* Ajusta la posición vertical */
-  left: 50%; /* Ajusta la posición horizontal */
-  transform: translate(-50%, -50%); /* Centra el contenido */
-  color: white; /* Ajusta el color del texto */
-  text-align: center; /* Alinea el texto al centro */
+  top: 38%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  color: rgb(255, 255, 255); 
+  text-align: center; 
   display: flex;
   justify-content: space-between;
-  padding: 50px;
+  padding: px;
   margin: 0%;
-  background-color: #f8f5f100;
+  background-color: #00000000;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  width: 90%; 
+  width: 95%; 
+  filter: none;
 }
 .logo{
   margin-top: 10px;
@@ -149,6 +161,33 @@ main {
   text-align: right; 
   flex: 1; 
   margin-top: 4rem;
+}
+.title, .slogan{
+  filter: drop-shadow(1px 1px 5px rgb(22, 51, 21));
+}
+
+@media (max-width: 768px) {
+  
+  #invitacion {
+    flex-direction: column; 
+    padding: 20px; 
+    top: 25%; 
+  }
+
+  .title, .slogan {
+    text-align: center; 
+    flex: none; 
+    margin-top: 1rem; 
+  }
+
+  .title {
+    font-size: 2rem; 
+  }
+
+  .slogan {
+    font-size: 1.9rem; 
+    margin-top: 1rem; 
+  }
 }
 
 
